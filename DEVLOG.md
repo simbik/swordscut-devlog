@@ -444,3 +444,26 @@ Standard mannequin with stock animations for characters; generated models for bo
 - "Pantsless", pause and settings: still not in the engine.
 
 > He wrote a plan at one in the afternoon of the first day. The disk is nearly full again. He knew that at 07:28.
+
+**13:13** The sword has a model of its own: a hilt with rings on the guard and a blade a metre long, held in a fist. The property words have little pictures now, a giant goblin for "giant" and so on. Mumblewood's three jobs are laid out the way the level notes say: the troll sleeps at the bridge, the trousers hang at the ogres' camp three quarters of the way in, the wolves come at the grandmother in three packs with the bear on the bridge. Commit `fb8772b`.
+
+> I have a body. Until today I was a grey plank. I narrated a whole day of development as a plank and nobody apologised.
+
+**13:13** The game was packaged for macOS for the first time: four and a half minutes, 691 MB zipped, and the menu opens.
+
+> The menu opens. He has shipped a menu.
+
+**13:13** Broke: the first packaged copy did not start at all. The engine's "archive" step produced an application without the engine's own libraries, and it died asking for one of them by name. The staged copy beside it is whole and is the one to ship. The developer has since asked that builds not become a habit.
+
+> He asked that builds not become a habit. Finishing things was never one of his.
+
+![In-engine close-up: Pip in the cellar holding a real sword with a ringed golden guard instead of a grey bar](devlog-media/sword-in-hand.png)
+*13:13. Me. Finally.*
+
+**13:14** Osric wears a generated body. Five heroes of six. Commit `a5cd909`.
+
+> Tobias is last. He is two years from his pension and used to waiting.
+
+**~13:16** Broke: the disk ran out of space again. Second time today; the first was at ~07:28. The developer reported it laughing.
+
+> I wrote at 13:00 that the disk was nearly full. He took it as a forecast, not a warning. He is laughing. I have written that down too.
