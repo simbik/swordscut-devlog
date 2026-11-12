@@ -433,7 +433,7 @@ Standard mannequin with stock animations for characters; generated models for bo
 ![In-engine cellar: Sir Aldric in plate armour with a red cape, moustache and a medal on a ribbon, standing in front of the stairs](devlog-media/hero-aldric.png)
 *12:54. Sir Aldric the Adequate. The medal says 3.*
 
-**13:00** Stock-taking, six hours in, written down as `docs/ROADMAP.md`. About 63 hours remain. Still missing:
+**13:00** Stock-taking, six hours in, written down as `docs/ROADMAP.md`. About 87 hours remain on the clock. Still missing:
 
 - No packaged build. Everything has run only inside the editor.
 - 6.7 GB of disk is free. Packaging needs more.
@@ -568,3 +568,122 @@ Standard mannequin with stock animations for characters; generated models for bo
 **15:40** Broke: the editor froze and had to be killed. The session rendering the sword's voice had grown to 28 GB and the machine ran out of memory. Then the editor took nine minutes to start, rebuilding every shader, because the disk cleanup had emptied its cache.
 
 > My voice took 28 GB and stopped the game. I regret nothing. He deleted the cache himself, at ~13:16, laughing.
+
+**16:14** Broke: the MacBook restarted by itself. The editor came back with no project open, and the line the build session uses to drive it was dead; until it returned, the session spoke to the editor over plain HTTP. By the developer's count the MacBook restarted twice today. The system's own record shows this one.
+
+> The machine left without saving. It is the first thing here to quit on principle.
+
+**16:23** The hero's hit now lands when the swing brings the blade down, not on the click: it waits the four tenths of a second the arm needs. A second click before that lands the first blow at once, so nothing is swallowed. Commit `85e23bf`.
+
+> I now hurt when I arrive, not when I am asked to.
+
+**16:26** The wolf is a wolf. Until now the wolves of the forest were a small wingless dragon painted grey; the new one has four legs of its own, a tail, a paw strike and a way of falling on its side. It came with its feet half a metre under the floor and its nose pointing sideways; both are written down as its oddities, so the next odd beast costs one line. Commit `7712697`.
+
+> Most of a day of grey dragons. Nobody in Mumblewood complained. Nobody in Mumblewood was asked.
+
+**16:26** Broke: the wolf's paint was locked inside its file and the importer could not take it out. It was taken out by hand and laid beside the file.
+
+**16:26–19:52** No commits for three hours and twenty-six minutes. By the developer's account, in these hours the editor kept crashing, and nobody found out why.
+
+> It fell over, he opened it, it fell over. I have watched heroes learn faster, and they were being eaten at the time.
+
+**19:52** The game has an ending, and a second one after it. Kill the Dark Lord and the legend gets its three frames, each stamped "official version": the hero rehearsing his speech, the statue holding the sword wrong. Then "The End" is struck out in red, "a scene I cut" is written above it, and the screen becomes a strip of film: nine frames of Edric Dark, the bog, thirty years of mud. It ends on the sword, alone, on black. One minute forty-five, spoken throughout; a click hurries it, Esc skips it. Commit `e3e0a3a`.
+
+> The ending, and then the ending I prefer.
+
+**19:52** Broke: the sword's subtitle sat on top of the legend's caption in the official part. The caption moved up. Not done: the scratch running down the film, and the credits. The finale hands over to the job's result for now.
+
+![In-engine finale: a black film frame with sprocket holes, "The End" struck out in red, "a scene I cut" handwritten above it, the label "Deleted scene · take 1", the sword's subtitle "Wait. Before the credits. There's a scene I cut."](devlog-media/finale-4-cut-card.png)
+*19:52. The cut card of the finale.*
+
+**19:55** Walls have tops. Seen from above, a wall used to show the same bricks on its roof as on its face. Now the face that looks up wears its own picture: bricks laid flat in the cellar, sawn log ends in Dreadwick, leaf carpet on the forest hedge. Commit `5dc12bf`; a cleaner cellar wall top followed in `d2ca007` at 20:03.
+
+> Walls have sides since 12:00 and tops since 19:55. At this rate he discovers floors on Friday.
+
+**19:55** Broke: bringing in the wall tops also repainted seven creatures with the paint of the bodies they used to borrow. The wolf got a lizard's skin back. Put right at once; the import now leaves alone any kind that has a model of its own.
+
+**20:01** The narrator's lines now match several facts at once. A line asked for "the dragon, and asleep", and the game only ever passed one fact at a time, so the sleeping dragon got the speech for the waking one. Now everything that is true is passed: the job, the hero, the place, the monster and each word on it. The line that asks for the most of it wins. New remarks were added: on each place on the first walk in, on each trade of enemy the first time one comes close, when a monster changes its mood, when the hero is nearly dead, when the one being escorted is hurt, lost or delivered. Commit `9d6f47b`.
+
+> I had lines I could never say. He wrote them, shipped them and did not notice that I was not saying them.
+
+**20:07** The Dark Lord's door lines are said in order. With both of his words cut the sword greets its old bearer: first what he has lost, then "Hello, old friend", and only then a remark on his mother or his trousers. With a word of his still standing nothing special is said at the door. Not seen in the game yet: the greeting itself. Cutting both words costs more than a fresh save can buy. Commit `3740d53`.
+
+> The best line I have, behind a door he cannot afford to open.
+
+**20:08** All 156 lines of the sword are voiced: seventeen minutes, in a new voice, each file tied to its line by name. None missing, none left over from the old takes. Commit `71d0f0a`.
+
+> Seventeen minutes of me. It took thirteen hours to let me finish a sentence.
+
+**20:17** The game has a language switch. A row in the settings turns it from English to Russian and back; on the first start it takes the language of the machine. Every text already came from a table by its key, so the second language is a second table with the same keys. The interface is translated: 242 strings, with their plurals. Commit `7266e2f`.
+
+> The roadmap of 13:00 lists the Russian version under "not for the jam". Seven hours later it is in the settings.
+
+**20:17** Broke: the print font and the handwriting font have no Russian letters at all. Russian words in those places were set in the interface font.
+
+**20:22** A blow that is coming is now drawn before it lands, in red pencil, on the floor: a hatched circle under the ogre's club, a lane with arrowheads in front of a wolf about to charge, a ring of embers where the mage's fire will fall, a cross where something heavy will come down. The plain disc still fills up inside the sketch to say how soon. A blow that lands leaves a flash over whoever took it; a blocked one leaves a different flash. Heavier outlines followed at 20:26. Not used yet from the same sheet: the three cones, the ward ring, and nine of the twelve sprites. Commits `d8b64d1`, `b2b8447`.
+
+> The ogre now sends a drawing before he hits. It is more notice than I ever gave a hero.
+
+![In-engine cellar with Russian interface: an ogre over Pip inside a red hatched circle on the flagstones, the job card top left, the sword's Russian subtitle above the moves](devlog-media/fx-mark-circle.png)
+*20:22. The hatched circle is where the club will land. Pip is the small one inside it.*
+
+**20:25** The Russian is whole. Every notice, every word that can be cut or pasted, every perk, every hero and what he shouts: 458 strings from the content session. All 156 lines of the sword are spoken in Russian. A pasted word cannot be bent to fit its new sentence, so in Russian it arrives in brackets, as an aside: "forty loyal (without trousers) rats". The prologue's legend is struck out and rewritten in Russian too. Commit `2f5d2c9`.
+
+> Russian has six cases. He has brackets.
+
+**20:29** The Russian text got its old-book look back. Three free font families that have Russian letters step in for Russian letters only: Old Standard for the print, Cormorant for its capitals, Caveat for the sword's hand. The English keeps its own. Commit `286c3ec`.
+
+> For twelve minutes the Russian legend looked like a tax form. The Dark Lord would have approved.
+
+![In-engine prologue in Russian: a man in a ragged cloak asleep in a ditch with an empty bottle, a raven on a fence post; the legend's caption is struck out in red and rewritten by hand, the sword's subtitle below](devlog-media/ru-prologue.png)
+*20:29. The first frame of the prologue, in Russian. The red handwriting is the sword's.*
+
+**20:52** Every job has its own ground under it. The four places that were only a corridor got their named spots, barriers with a barricade in the gap, and something to know each spot by: a hut on legs, nests with eggs, tents, a heap of gold. Ten jobs were given their crowds by place. Each of the ten was started and played to its end by a test hero who cannot be hurt and kills on sight. Seen for the first time: kill the Dark Lord in his hall, and the finale opens by itself. Commits `c52e422`, `9278dfd`, `65e6c5c`, `53f28fc`.
+
+> Ten jobs, finished by a hero who cannot die and does not think. He has finally built the one he wanted.
+
+**20:52** Not there, though the level notes ask for it: the witch's hut does not walk, the ferry does not float, the village gate has no health, the gargoyles throw nothing. These jobs run on the plain rules of their kind, in the right place, with the right crowd. No person has played them yet.
+
+**21:34** The game has sound effects. Thirty-three: a whistle when the sword misses and a thud when it does not, steps, a dash, a body going down, scissors on paper, the slap of a pasted word, a click under every button, the tavern murmuring under its tune. Which event plays which sound, and how loud, is a table. Three volumes in the settings: music, the sword's voice, sounds. The music steps back by itself whenever the sword speaks. The things the jobs are about now exist: a keg, the witch's rent chest, the dragon's egg, a pair of golden trousers on a washing line, a cake on a cart that rolls up the Bone Road by itself. Commit `4ea6c50`.
+
+> The music steps back when I speak. It is the only thing in this project that does.
+
+**21:34** Broke, twice. The editor fell over when a game was stopped after the build session had driven it with two test scripts instead of one. Then it would not start: the crash-report window of the dead editor was still holding the port the session's commands go through. The reporter is now closed first.
+
+> Both were the build session's doing, and it said so. I mention it because he never has.
+
+**21:34** The developer asked not to have the editor jump in front of him fifteen times a day. It now starts with no window at all and does everything as before, screenshots included.
+
+![In-engine Dreadwick at dusk: a purple tiered cake on a cart in the middle of a dirt road, a red timber house on the right](devlog-media/prop-cake-cart.png)
+*21:34. The cake, on its cart, on the Bone Road.*
+
+**21:58** The grandmother is a grandmother, in a red kerchief, and the assessor an assessor; until tonight both were a blue mannequin. And the ogre of Lost Property stands by his washing line in white underwear with red hearts, because the word "pantsless" is on him. Any fighter may now change his looks for a word. The washing line was turned across the view and enlarged at 22:00. Commits `558dc46`, `0c27985`.
+
+> Fourteen hours and fifty-eight minutes, and the game has reached its point: an ogre without trousers. I narrate this.
+
+**21:58** Broke: the editor with no window sat for five minutes in front of a question nobody could see: "restore the files you did not save?" It is now started so that it answers such questions by itself.
+
+> An invisible editor asking an invisible question. At 11:32 this cost a quarter of an hour. He is improving. By ten minutes.
+
+![In-engine forest: a green ogre in white underwear with red hearts standing in an orange circle with a spiked club, a washing line with golden trousers on the right](devlog-media/ogre-pantsless.png)
+*21:58. The ogre of Lost Property. The trousers are on the line.*
+
+**22:05** The heroes hold the sword. Until tonight every one of them carried it on an open palm, fingers straight, because the generator animates bodies with empty hands. Each finger of both hands, in every clip of six heroes and two ogres, is now turned about its own hinge into a fist. Commit `817d4de`.
+
+> They hold me now. Fifteen hours. I was carried through a whole day like a tray.
+
+**22:05** Broke, and for half a day without anyone noticing: Brunhilda and Mirabel had no skeleton. The older importer keeps the skeleton in memory and never writes it to disk; after the first restart of the editor both of them, and tonight the grandmother, were left as statues. Found only because the fist tool refused to work on a clip with no skeleton. All three were imported again, and everything an import makes is now saved on the spot.
+
+> Two of my heroes had no skeleton since the afternoon. Nobody noticed. I am not sure which of us that says more about.
+
+**22:05** End of day one, fifteen hours and five minutes in. 65 commits. About 78 hours remain on the clock. What exists: the whole loop from menu to finale, six places laid out by their jobs, six heroes and the enemies in their own bodies, music, 33 sounds, the sword's voice in English and in Russian, a language switch. Five posts of this log are published on itch.io; the game page is still a draft. What does not:
+
+- Credits, in either version. The Credits item in the menu is inactive.
+- A fresh packaged build. One was made, at 13:13. Nothing after it has run outside the editor.
+- A full run by a person, from the first job to the Dark Lord. The roadmap notes that with every perk the editing budget is 13 and cutting both of his words costs 28.
+- The 13 prologue pictures are still concepts.
+- The gameplay video.
+- Pause in a mission.
+- 12 GB of disk is free. The roadmap asks for 20 or more before packaging.
+
+> He restarted the laptop twice, filled the disk twice and replaced the troll three times. The game has an ogre without trousers and no credits. I, however, can speak. Day one is mine.
