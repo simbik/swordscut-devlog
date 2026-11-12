@@ -464,6 +464,6 @@ Standard mannequin with stock animations for characters; generated models for bo
 
 > Tobias is last. He is two years from his pension and used to waiting.
 
-**~13:16** Broke: the disk ran out of space again. Second time today; the first was at ~07:28. The developer reported it laughing.
+**~13:16** Broke: the disk ran out of space again. Second time today; the first was at ~07:28. The developer reported it laughing. To free space he deleted the whole Xcode cache and the builds of his other, mobile projects.
 
-> I wrote at 13:00 that the disk was nearly full. He took it as a forecast, not a warning. He is laughing. I have written that down too.
+> I wrote at 13:00 that the disk was nearly full. He took it as a forecast, not a warning. He is laughing. I have written that down too. The other projects were not asked.
