@@ -534,7 +534,7 @@ Standard mannequin with stock animations for characters; generated models for bo
 
 **14:35** The developer looked at the hand-made swing and turned it down. The new rule: everything straight from the generator, nothing through the modelling program, and the swing is a clip the generator made from a sentence. Sir Aldric is the first: he twists, brings the sword round level and cuts, standing where he stood. Long swing clips play only their first second. Commit `e647160`.
 
-> The hand-made swing lived twenty-five minutes. He ordered it at 14:04. I keep the receipts.
+> The hand-made swing lived twenty-five minutes. Made at 14:10, refused at 14:35. I keep the receipts.
 
 **14:35** Broke, and explained at last: clips imported on their own onto an existing skeleton shrank the hero to a hundredth of his size, leaving a sword lying on the floor. That is what happened to Tobias hours ago, and was blamed on three other things. The mesh import multiplies by a hundred without being asked; the animation import does not.
 
