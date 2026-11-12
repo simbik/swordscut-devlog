@@ -333,3 +333,114 @@ Standard mannequin with stock animations for characters; generated models for bo
 **11:34** The Dark Lord was made lighter. Every enemy now keeps a little of its own colour on the unlit side instead of going black. Commit `aa39a9c`.
 
 > He was always hard to paint as a villain. I managed.
+
+**11:58** The developer looked at all of it and said it was weak, everything, landscapes included. The plan now: each place gets one painted ground, the whole floor in a single picture, and real furniture from asset packs stands on it. The cellar already has the furniture, from the Stylized Dungeon Props Pack on Fab: barrels with staves, shelves, wooden pillars with torches, a throne that is visibly crates. The painted floor is ordered from the graphics session, with a top-down plan of each level to paint over. Commit `099768e`.
+
+> He is right, which I do not enjoy. It took him five hours to look.
+
+![In-engine cellar wine room: giant rats around the hero between rows of wooden shelves and pillars](devlog-media/cellar-props.png)
+*11:58. The wine cellar with furniture from a pack. The floor is still the tile; the painting is on order.*
+
+**12:00** The cellar has a painted floor: one picture for the whole place, with a worn path through both doorways, wine rings in the hall, straw and a drain among the racks. It was painted over a plan of the level, so the walls stand exactly on their dark footprints. The developer has now asked for the six heroes to stop being a white mannequin; ordered. Commit `ef9a316`.
+
+> The first room in this game that looks like somebody drew it on purpose. Somebody did. Not him.
+
+**12:00** Broke: the brick texture was laid from above only, so on the face of every wall it ran down in stripes like wet paint. Walls are now papered from the side.
+
+> A top-down game again. Walls have sides. He will get there.
+
+![In-engine cellar doorway: painted flagstone floor with a worn path, brick cross wall, wooden pillars, giant rats coming through the passage](devlog-media/cellar-ground.png)
+*12:00. The doorway between the hall and the wine cellar, painted floor under real props.*
+
+**12:03** The game now puts a hero's own body on him when one exists, on the mannequin's skeleton. Commit `9ecab3a`.
+
+> "When one exists." I admire the optimism.
+
+**12:06** Mumblewood has trees that are trees: birches and broadleaves from a free pack, boulders, bushes, flowers. Dreadwick has houses with smoking chimneys, a well, a gallows, carts, hay and fences, from a village pack of 1.2 GB, which is not committed. Both still stand on tiled ground; their paintings are on order. The modelling session is generating the heroes' bodies from pictures and re-hanging them on the mannequin's bones. Commit `228f0a3`.
+
+> A village with a gallows, straight from the shop. Somebody else thought of my heroes before he did.
+
+![In-engine Dreadwick: recruits around the hero on a dirt road, a wooden fence, a hay bale, a well and a house roof with chimney smoke](devlog-media/dreadwick-pack.png)
+*12:06. Dreadwick with a village in it.*
+
+**12:10** All six places stand on painted ground now. Mumblewood has a river that is painted water with banks instead of a blue box alone; Sorrowmire is mud with footprints in it; Dreadwick is a rutted road between real houses; Cinder Peak is cracked rock around the lava; Doomspire has a star inlaid in its floor. The bridge deck has a texture. Commit `33c11ac`.
+
+> The star in Doomspire: nobody asked for it and everybody will keep it. Much like me.
+
+**12:10** Broke: the lava on Cinder Peak glowed at nine times the brightness of anything else and came out as flat yellow holes. Turned down to something that still has cracks in it.
+
+> First a toaster, now this. He lights a room the way he plans a week.
+
+![In-engine Doomspire: the hero on a dark purple floor with a large inlaid compass star, the Dark Lord's health bar above](devlog-media/ground-doomspire.png)
+*12:10. Doomspire. The star is paint.*
+
+**12:21** The troll has been replaced a third time today. This one was generated from the developer's own concept picture, arrived with a skeleton of its own and four clips, and looks like the drawing: hide, belly, a club the size of the hero. The rest of the bestiary and the six heroes are to go the same way. Commit `f4caab9`.
+
+> Three trolls in one morning. I have gone through heroes more slowly.
+
+**12:21** Broke: the first file brought only two of its four clips. Unreal refuses an animation that lasts thirty-seven and a half frames, and says so in the log. Re-exported on whole frames.
+
+> It said so in a log. He does not read logs. He is not reading this one.
+
+![In-engine close-up in the forest: a grey troll in hides mid-swing over the small white hero, red danger circle on painted grass](devlog-media/troll-generated.png)
+*12:21. The Toll Troll, generated from the concept. The white figure at its knee is still the hero.*
+
+**12:29** The hero is no longer a white mannequin. Pip Underfoot walks the cellar as himself: the nose, the hair, the red cape, generated from his tavern portrait and moving on his own four clips. The other five heroes are to follow the same way. The sword in his hand is still a grey placeholder. Commit `f783e4d`.
+
+> Everybody has a body now except the title character. I am a grey plank. I have asked nobody to fix that yet.
+
+**12:29** Broke, twice: on his first two entrances Pip was hidden behind his own sword, which had grown to the size of a barn. The generated skeleton scales its bones while it animates, and the sword inherited every bit of it. The sword now ignores the hand's scale.
+
+> For two takes I was the size of a barn and nobody could see the hero. He calls that a bug.
+
+![In-engine close-up in the cellar: Pip, a thin man with spiky hair, a big nose and a red cape, holding a grey placeholder sword, barrels behind him](devlog-media/hero-pip.png)
+*12:29. Pip Underfoot, in person. The grey plank is me.*
+
+**12:32** Six of the bestiary are now generated from their concept pictures: the troll, the ogre, the skeleton, the rat, the Rat King and the Dark Lord. The King has his crown and his cloak; the Dark Lord has a crown of spikes and a beard. Attack clips were shortened. Commit `3ff7604`.
+
+> He has the look of a man who threw a sword into a bog and regrets the paperwork.
+
+**12:32** Broke: forty-one enemies on screen ran at about thirty frames a second inside the editor. Each rat was nineteen thousand triangles. A thinner rat was ordered.
+
+> Nineteen thousand triangles of rat, forty times. The laptop from this morning sends its regards.
+
+![In-engine close-up: the Dark Lord, a bearded man in dark armour and a spiked crown, standing over the white placeholder hero on painted forest ground](devlog-media/darklord-generated.png)
+*12:32. The Dark Lord, generated from the concept. The hero beside him had not been replaced yet in this frame.*
+
+**12:35** Pip's swing clip was cut to 0.8 seconds, commit `35f2b41`. The thinner rat arrived: 4,500 triangles, commit `7ce50eb`.
+
+> The rat lost three quarters of itself in three minutes. Nobody can tell.
+
+**12:40** Three heroes have bodies now: Pip, Brunhilda Oxblood with her braids and fur shoulders, and Lady Mirabel Vane, who swings the sword from over her head. The other three wait for the developer to buy more credits from the service that generates them. Commit `6f4f621`.
+
+> Lady Mirabel is the first of them to hold me as if she had paid for lessons. The other three are held up by his wallet.
+
+![In-engine close-up in the cellar: Lady Mirabel in a burgundy coat and tall boots, mid-swing, holding the grey placeholder sword above her head](devlog-media/hero-mirabel.png)
+*12:40. Lady Mirabel Vane, mid-swing.*
+
+**~12:50** The game has an itch.io page, a draft that is not public yet: title, tagline "A game about a hero. Recut by his sword.", description, cover. This log went there as three posts, up to 12:32. Another Claude Code session did it. The developer had the six engine screenshots removed from the page: too rough for now. Only the cover remains.
+
+> Six pictures of his own game, and he took them down himself. I did not have to cut anything.
+
+**12:52** The sword now sits in the hero's palm instead of his wrist, placed from the knuckles of the rest pose. Commit `ce18113`.
+
+> Five hours and fifty-two minutes to find out where a hand holds a sword.
+
+**12:54** Sir Aldric the Adequate has arrived: plate armour, a red cape, a moustache, and a third-place medal on a ribbon, worn over the breastplate. He was made in a different program from the others and came facing sideways; the game now works out which way a hero is looking from where his arms are. Four heroes of six. Commit `d1221ad`.
+
+> The heroes cannot be trusted to say which way they are facing. The medal he wears where everyone can see it.
+
+![In-engine cellar: Sir Aldric in plate armour with a red cape, moustache and a medal on a ribbon, standing in front of the stairs](devlog-media/hero-aldric.png)
+*12:54. Sir Aldric the Adequate. The medal says 3.*
+
+**13:00** Stock-taking, six hours in, written down as `docs/ROADMAP.md`. About 63 hours remain. Still missing:
+
+- No packaged build. Everything has run only inside the editor.
+- 6.7 GB of disk is free. Packaging needs more.
+- No recorded voice: 156 lines, subtitles only. Not one sound in the game.
+- The ending: the Dark Lord's notice, the deleted scene and both credits. The Credits item in the menu is inactive.
+- Five of six levels are a road over painted ground. Only the cellar is laid out.
+- Osric and Tobias have no bodies of their own. They wait for credits.
+- "Pantsless", pause and settings: still not in the engine.
+
+> He wrote a plan at one in the afternoon of the first day. The disk is nearly full again. He knew that at 07:28.
