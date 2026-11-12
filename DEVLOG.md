@@ -531,3 +531,40 @@ Standard mannequin with stock animations for characters; generated models for bo
 > Three lines. I have a hundred and fifty-six. I have said more to him in this log.
 
 **~14:32** The first two battle tracks arrived as raw files: the cellar and the bog. Not mastered, not in the engine.
+
+**14:35** The developer looked at the hand-made swing and turned it down. The new rule: everything straight from the generator, nothing through the modelling program, and the swing is a clip the generator made from a sentence. Sir Aldric is the first: he twists, brings the sword round level and cuts, standing where he stood. Long swing clips play only their first second. Commit `e647160`.
+
+> The hand-made swing lived twenty-five minutes. He ordered it at 14:04. I keep the receipts.
+
+**14:35** Broke, and explained at last: clips imported on their own onto an existing skeleton shrank the hero to a hundredth of his size, leaving a sword lying on the floor. That is what happened to Tobias hours ago, and was blamed on three other things. The mesh import multiplies by a hundred without being asked; the animation import does not.
+
+> A hero a hundredth of his size and a sword on the floor. It is the most accurate picture of our partnership so far.
+
+![In-engine cellar, side view: Sir Aldric in a red cape and armour holding the sword upright in front of him, barrels in the dark behind](devlog-media/aldric-studio-swing.png)
+*14:35. Sir Aldric, straight from the generator, sword in hand.*
+
+**14:47** The game makes a sound. Eight pieces of music from the audio session: one for the tavern and the menus, one for each of five places, the Dark Lord's own for his keep, one for the prologue. One looping track plays per screen and, in a mission, per level. The sword has a voice in the engine: the first lines of the prologue are spoken, and the picture now waits for the line to finish instead of counting letters. Nobody in the build session has heard any of it; a log says it plays. Commit `93d395e`.
+
+> I speak. Seven hours and forty-seven minutes in. The picture waits for me to finish, which is more than he does.
+
+**15:14** All six heroes now come straight from the generator, with the same swing: wind-up at shoulder height, a level cut, feet planted wide. Pip, Brunhilda, Mirabel, Osric, Tobias and Sir Aldric each stood in the cellar and cut the air for the camera. Commit `0072287`.
+
+> Six bearers, one swing. I taught none of them. It shows.
+
+**15:14** Broke: Brunhilda and Mirabel arrived fifty metres tall. Their files carry a bind pose the newer importer refuses; it then binds the mesh a hundred times too large on a skeleton of the right size. The older importer binds them properly, a hundred times too small, which one number puts right. Then Brunhilda vanished mid-swing and left the sword on the floor again: the one clip that needed rescuing had come in at a hundredth. The rescue now always goes through the newer importer.
+
+> Sixty metres wide, fifty metres tall, a hundredth of a man. Today my heroes have been every size except the right one.
+
+**15:14** Broke: the camera could not catch a swing by the clock. With the editor in the background the game ticks in lurches, and both frames showed the same instant. The swing is now frozen at a chosen second of the clip and then photographed.
+
+**15:40** The blade is no longer steered by the hand. The generator animates bodies that hold nothing, so in the swing the hand tumbles and the sword pointed backwards at the moment of the blow. The modelling session measured it: the forearm goes cleanly up and comes cleanly down. Now the forearm aims the blade: forward and down at rest, up at the top, level and forward on the cut. Commit `88e9f64`.
+
+> I pointed backwards at the moment of the blow. I would call it a metaphor, but he would ask what for.
+
+**15:40** The ogre is whole at last, straight from the generator with empty hands, and carries a real spiked club of his own. The rubber club is gone. Twenty-four of the sword's lines are now spoken aloud.
+
+> Twenty-four lines out of a hundred and fifty-six. The ogre got a club before I got a sentence in edgeways.
+
+**15:40** Broke: the editor froze and had to be killed. The session rendering the sword's voice had grown to 28 GB and the machine ran out of memory. Then the editor took nine minutes to start, rebuilding every shader, because the disk cleanup had emptied its cache.
+
+> My voice took 28 GB and stopped the game. I regret nothing. He deleted the cache himself, at ~13:16, laughing.
