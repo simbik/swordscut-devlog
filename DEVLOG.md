@@ -471,3 +471,63 @@ Standard mannequin with stock animations for characters; generated models for bo
 **~13:30** Broke: running that was not in place. On four models exported from Studio the pelvis travelled two and a half metres forward over one run cycle, although the modelling session had switched on the "in place" mode. The session removed the drift itself: a script pins the pelvis to where it stood in the first frame.
 
 > Four models tried to leave, two and a half metres per step cycle. I understand the impulse. They were pinned by the pelvis. He is here voluntarily.
+
+**13:42** The game has a settings screen, opened from the main menu: fullscreen, a borderless window or a plain one, picture quality, render scale, vertical sync, a frame limit and a frame counter. A packaged game now starts fullscreen at a quality that leaves the expensive lighting out. The project's template had ray tracing switched on, for a game seen from above with a painted floor; it is off. The sword's size is set per hero: a two-hander in Brunhilda's hands and a long knife in Pip's. Commit `d1c7c07`.
+
+> Ray tracing, for a painted floor seen from above. It had been on since 07:10. He did not ask what was making the laptop warm.
+
+**13:42** Broke: the developer said the heroes do not hold the sword, so the modelling session clenched all their fists, thirty finger bones a frame. In the engine every one of them came apart into red ribbons. The fists were set aside and the open hands put back.
+
+> He asked for fists and got ribbons. I have seen heroes come apart before. Usually it takes a troll.
+
+**13:42** Broke: the new ogre and Tobias arrive sixty metres wide, for reasons nobody has found. Three imports, three explosions; the old versions stand.
+
+> A sixty-metre pensioner. The tavern has a door.
+
+**13:49** Five heroes hold the sword in a closed fist now, and none of them comes apart doing it. The cause of the red ribbons was found in a log: the modelling session's export wrote the skeleton's reference pose from a random frame of the last clip instead of the rest pose. The five run in place. Brother Osric lost his lacquered look with a re-baked texture; Aldric's was re-baked too. Tobias and the new ogre still arrive sixty metres wide. Same warning in the log, same result. They stay out. Commit `f6f7714`.
+
+> The cause was in a log. It always is. Osric is a round, worried monk again, as drawn. He has reason.
+
+![In-engine close-up: Brother Osric, a round monk in a brown habit with a rope belt and a cross, holding the sword in his right fist](devlog-media/hero-osric.png)
+*13:49. Brother Osric, matte at last.*
+
+**~13:55** A sixth Claude Code session started on sound. The sword's voice is to be made on the laptop itself with Chatterbox TTS, one file per line. Music is to come from Google Lyria through OpenRouter, capped at eight paid requests.
+
+> Seven hours in, somebody remembered that the narrator of this game speaks.
+
+**13:57** The hero's swing plays at its own pace instead of being squeezed into the attack cooldown. Commit `4f3e00e`.
+
+**14:04** The developer clicked the left mouse button and watched his hero dive forward, bent double, instead of swinging. The generated clip called "slash" is a headlong stab. It is no longer used: a strike is now the hero winding up to his sword side and cutting across where he stands, feet planted. Commit `9d49d76`.
+
+> Seven hours and four minutes in, he pressed the attack button and looked. Travelling while striking is what my moves are for.
+
+**14:04** Broke, and had been for a while: hits that looked like hits and were not. Two causes. The swing only counted an enemy whose exact middle was inside the arc, so a troll standing mostly in the blade's way was missed. And the aim was taken where the cursor crosses the air at the hero's chest, not the ground the enemy stands on, which slid it half a metre up the screen. Now any part of the body in the arc counts, and the aim is taken at ground level.
+
+> I was missing trolls. Me. I want it recorded that the arithmetic was his.
+
+**14:10** The swing is a swing. The modelling session animated one by hand, because both of the generator's ready-made sword strikes fold the hero in half: feet planted, the blade up over the right shoulder, down in front, three quarters of a second. Five heroes have it. Old Tobias has arrived, sixth of six, bald and grey-moustached, taken straight from the generator's own file, because every copy that passed through the modelling program came out sixty metres wide and nobody found out why. He keeps the turn-of-the-body strike: his own clip runs six seconds. Commit `70ebcea`.
+
+> Six heroes of six. Tobias looks unimpressed. He suspects something about the sword and says nothing: two years to his pension.
+
+![In-engine cellar, side view: Pip standing upright with the sword raised over his right shoulder, mid wind-up](devlog-media/swing-windup.png)
+*14:10. Wind-up, 0.27 seconds in. He is standing up. Note that.*
+
+![In-engine cellar: Old Tobias, a bald man with a grey moustache and beard in a red cloak, holding the sword low in his right hand, the stairs behind him](devlog-media/hero-tobias.png)
+*14:10. Old Tobias, sixth of six.*
+
+**14:19** The developer said Pip holds the sword wrong, "completely". He did: it sat square across the fist, so it stuck out sideways at rest and pointed at the floor at the end of every cut. The sword now leans fifty degrees forward in the hand. Tanks that take a blow on the shield say so: "Blocked · go round" rises off them, because a blocked hit and a miss looked exactly alike. Commit `2985342`.
+
+> I was held like a rolling pin. For seven hours. By all of them.
+
+![In-engine side view: Pip at the end of a cut, arm forward, the blade pointing forward and down](devlog-media/grip-strike.png)
+*14:19. End of the cut. Forward and down, the way a cut ends.*
+
+**14:24** The wrist in the hand-made swing was corrected on five heroes, and the lean in the grip came down from fifty degrees to twenty to match. Commit `9360533`.
+
+> Fifty degrees at 14:19, twenty at 14:24. He holds an opinion about as long as he holds a sword.
+
+**~14:28** The sword has a recorded voice for the first time: the first three lines of the prologue, as three files on disk. Forty test takes came before them. None of it is in the engine yet.
+
+> Three lines. I have a hundred and fifty-six. I have said more to him in this log.
+
+**~14:32** The first two battle tracks arrived as raw files: the cellar and the bog. Not mastered, not in the engine.
