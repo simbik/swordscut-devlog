@@ -687,3 +687,97 @@ Standard mannequin with stock animations for characters; generated models for bo
 - 12 GB of disk is free. The roadmap asks for 20 or more before packaging.
 
 > He restarted the laptop twice, filled the disk twice and replaced the troll three times. The game has an ogre without trousers and no credits. I, however, can speak. Day one is mine.
+
+## Nov 13 — Day 2
+
+**The night.** Day one was closed at 22:05. The sessions kept committing until 23:27, stopped for eight hours, and started again at 07:33. The times up to 23:27 are still Nov 12.
+
+> Fifteen commits after the day was closed. Most of my bestiary was born while he was not watching.
+
+**22:12** The demo maps of five asset packs were removed: nothing in the game referred to them.
+
+> Five demo maps of other people's games. Nobody here was playing them. Nobody here has played this one through either.
+
+**22:17** Russian job titles were shortened so they fit the list on the board.
+
+> Russian is longer than English. He found out at 22:17.
+
+**22:27** The hydra is six heads rising out of a black pool, and the gargoyle is a statue with a boulder. Neither was ever meant to walk, so neither has a skeleton now: a plain model stands where the fighter is, and the fighter keeps its behaviour. Thirty-two more creatures were due that night from a second generator, Rodin, whose skeletons name every bone differently. The grip, the forearm aim and the fist tool learnt its names for the hand, the forearm and the fingers. A test body from it stood on the floor, faced the right way and brought a club down from above.
+
+> Six heads and no legs. The ideal monster for this developer: it stays where it is put.
+
+![In-engine Sorrowmire at night: a green hydra with several heads in an orange circle, dark mud, green pools and wooden posts around it](devlog-media/enemy-hydra.png)
+*22:27. The hydra: a model with no skeleton, standing where the fighter is.*
+
+**22:29** Fifteen enemy weapons were imported, and who holds what was written down for the bodies still to come.
+
+**22:42** Why the game dragged on the developer's Mac: two of the engine's most expensive features were on by default, light that bounces around the scene and an upscaler that sharpens every frame. In a forest seen from above they changed the picture by a shade of shadow and cost two fifths of the frame rate: 41 frames a second with them, 68 without, same scene, same size. They are now off unless asked for, with a row in the settings. The settings also got an overall volume, a minus and a plus for each of the four levels, and room to go up to 150%. The test pressed the language row for real: the screen turns English and back on the spot, and the choice is still there after the game is closed.
+
+> A shade of shadow for two fifths of the frame rate. He kept that deal for fifteen hours. He likes a bargain.
+
+**22:46** Nine more creatures stopped borrowing bodies, all from Rodin: the goblin archer has a bow, the shaman a staff with a skull, the recruit a pitchfork, the kobold a spear, the witch a broom, the drowned man a hook; the bone hound is bones, the boar wears its ribbon, the bear is a bear. Each came with its origin in its belly and was lifted by exactly as much as it hung below the floor. Each closes its fist on what it holds.
+
+> Nine bodies in one go. The troll alone took three tries.
+
+**22:52** Enemies have a second hand. A bow sits in the left one; a shield stands upright in it beside a halberd in the right; an anchor or a censer hangs from its ring whatever the arm does. A weapon cut out of the notice is gone from the hand as well as from the numbers: cut "with bows" from Lost Property and the goblins stand there holding nothing.
+
+> Cut a word and the bows vanish from their hands. That is the whole game, shown at last with a hand, fifteen hours and fifty-two minutes in.
+
+**23:02** Twenty-one more in one go, and with them nobody in the game wears a borrowed body, except five who are being remade. The executioner has his axe, the toll knight a halberd and a tower shield, the tax collector his ledger, the Dark Lord's mother her rolling pin. The imp is an imp, the harpy has wings, the dragon is a dragon three metres at the shoulder. All of them came through the newer importer without trouble.
+
+> The Dark Lord's mother has a rolling pin. She is the best-armed person in this project.
+
+**23:02** Broke: things that hang hung upwards. The drowned captain's anchor and the priest's censer floated above their heads like balloons: they had been turned ring-up instead of ring-down. Fixed at 23:08.
+
+> Balloons. On a drowned captain.
+
+![Twenty-one in-engine side views in the cellar: a witch, an executioner, a grandmother, a priest with a censer floating above him, a tax collector, armoured knights, a harpy, an imp, a toad, a hatchling and a red dragon](devlog-media/enemies-batch2.png)
+*23:02. Twenty-one of them, from the side. The censer is still floating, top row, fourth from the left.*
+
+**23:08** The settings are three columns now: game, picture, and sound with sliders. The quality presets and vertical sync were removed, because they did nothing.
+
+> The quality presets did nothing for nine and a half hours. They fitted in.
+
+**23:13** Four source files had grown past a thousand lines each. They were split by what they do: the screens one file per screen, and the enemy, the hero and the mission director three parts each. The longest file is now 807 lines.
+
+**23:16** Lighter textures: enemies capped at 1024 pixels, the generator's unused maps at 256, and the ground paintings, stored raw at about forty megabytes each, are compressed. The packaged game is compressed too.
+
+> Forty megabytes a painting, on a disk that ran out twice. He noticed at 23:16.
+
+**23:21** The last five came back remade: the troll finally holds his club, the skeleton and the Dark Lord have swords, the rat and the Rat King stand on two legs. The dark army was repainted lighter, so it can be told from the walls.
+
+> The rats stand on two legs now, which I find presumptuous.
+
+**23:21** Broke: in the test the Dark Lord's own fight could not be reached. Three coins of editing budget do not cut two words at fourteen each.
+
+> The roadmap warned at 20:30, the test confirmed at 23:21, and nobody has fixed it. I like his door shut.
+
+**23:22** The Dark Lord was given lighter paint, so he can be told from his own tower.
+
+> He blended into his own tower. Thirty years on a throne will do that.
+
+**23:26** The Rat King and the Dark Lord were remade without their long cloaks, so the body and the sword can be seen. Their paint followed at 23:27.
+
+> The Dark Lord holds a sword now. I would rather not discuss whose it resembles.
+
+![Two in-engine close-ups in the cellar: on the left the Rat King, a fat brown rat with a crown and a red collar, on the right the Dark Lord in black armour with a horned golden crown and a sword](devlog-media/rodin_batch3_v2.png)
+*23:26. The Rat King, simply fat, and the Dark Lord without his cloak.*
+
+**23:27–07:33** No commits for eight hours.
+
+> Eight hours of quiet. The first stretch today in which nothing broke.
+
+**07:33** The template's code and content for its strategy and twin-stick variants were removed. The game never used them.
+
+> Two other games came in the box. They lived in the project for a day and nobody played them.
+
+**07:51** After the complaint that the world was dark and sad, every place but the forest has a stronger sky light and exposure, and everyone in it is painted flat and bright whatever the light, the way they were drawn. The settings were cut to two columns. The forest bridge lost a rock that had been living inside its rail.
+
+> The cellar finally looks like somewhere a keg would want to be.
+
+**07:51** Broke: the side screenshots in this log lied about the dark. That camera ignored the exposure; the real screen was never that grim.
+
+> The pictures lied. I did not. Mostly.
+
+![Six in-engine top-down views with the Russian interface: the cellar, Mumblewood, Sorrowmire, Dreadwick, Cinder Peak and Doomspire, each brighter than before, the job card top left, the hero's plate and moves at the bottom](devlog-media/brighter_places.png)
+*07:51. All six places after the light was turned up. Top row: the cellar, Mumblewood, Sorrowmire. Bottom row: Dreadwick, Cinder Peak, Doomspire.*
