@@ -781,3 +781,97 @@ Standard mannequin with stock animations for characters; generated models for bo
 
 ![Six in-engine top-down views with the Russian interface: the cellar, Mumblewood, Sorrowmire, Dreadwick, Cinder Peak and Doomspire, each brighter than before, the job card top left, the hero's plate and moves at the bottom](devlog-media/brighter_places.png)
 *07:51. All six places after the light was turned up. Top row: the cellar, Mumblewood, Sorrowmire. Bottom row: Dreadwick, Cinder Peak, Doomspire.*
+
+**09:31** The marker over the target of a job used to be a beam of light standing straight through the target. Now it is a flat green arrow over the place or over the target's head, and it always faces the camera.
+
+**09:31** Broke: the first arrow leaned the wrong way and showed the camera its flat end. For two tries the marker was a disc.
+
+> All night the troll stood with a pole of light through his chest and never complained. The developer did, in the morning.
+
+**09:46** Four things in one sitting. Esc stops the fight and offers four ways on: back to the fight, settings, leave for the tavern, the main menu. The road to a job has its own loading screen: the place, the notice, and scissors running along a red line. Credits roll after the last film. And a cheat for the testers: sc.Montage gives as much ink as you ask for.
+
+**09:46** Broke: nothing that reached the game. The test pressed the wrong buttons twice, because it trusted their order instead of their labels.
+
+> The credits name the old man as the star. I come second, "the sword, as the sword". I have let it go. I have not forgotten it.
+
+**09:51** The loading screen said "cutting to the scene". It says "the hero is on the road" now.
+
+> Nobody in this kingdom has seen a film. They have seen roads.
+
+**09:55** The "job done" stamp no longer sits on the line under it. The loading sheet used to say only the kind of job and its title; it now says in plain words what the job asks and who carries me there.
+
+**10:04** Health, speed and attack speed were written out in words on the result card and the hero card. Now icons say them. Twelve stat icons were imported.
+
+**11:20** On the result card the numbers stand by their stat icons instead of at the far edge. The notice board fits a narrow window: slimmer side columns, smaller list titles, and the notice title wraps inside its sheet.
+
+**12:11** Blows have weight. The effect pictures that had been drawn and never used are shown now: a crescent on a swing, a streak on a thrust, a ring on a spin, dust behind a dash, stars over the stunned. On a hit both fighters freeze for a few hundredths of a second and the camera shakes (21 cm on a hit against the troll, measured). Coins and ink got their own drawn icons.
+
+**12:11** Broke: the first shake moved the camera itself, and nothing moved on screen. It shakes the end of the camera arm now.
+
+> Now when I hit a troll, the world flinches. As it should have from the start.
+
+**12:12** The forest bushes were an emerald green from some other game. Leaves and grass were repainted in the warm yellow-greens and dark olives of the forest concept.
+
+**12:47** Balance pass. The sword now grows faster: Honed Edge gives +25%, +50% and +100% by level. Small enemies have 25 to 60 health and take two or three blows; bosses have 600 to 2500 and are meant to last one to three minutes; the Dark Lord has 4000. The word "giant" in the reward slot of a notice no longer doubles the reward. Four notice words (regrowing, loyal, loud and walking) had been loaded and done nothing; they act now. The tables and what is not yet checked in play are in docs/BALANCE.md.
+
+> For a whole day you could spend ink to make an enemy loyal, and he did not care. Now he cares. Nobody has played it yet.
+
+**12:50** The montage points became ink. At 12:45 their tokens were redrawn as red ink drops; at 12:50 the notice board got an inkwell that shows how much ink is left, every text says ink and drops instead of points, and the circle of fire is warned of in red pencil like every other blow.
+
+**12:50** Broke: imported pictures were not on disk after the first try, because the import finishes later than the script. And the asset panel the script opened got into every screenshot until the editor was restarted.
+
+> I used to pay in "montage points". Now I pay in ink, like any honest editor.
+
+**12:56** The dragon's gold was pale cones; it is mounds with coins now. The bar that names the speaker kept the old language after a language switch; it now takes the speaker's name in the current language with every line.
+
+**12:56** Broke: rebuilding the bar along with the screen did not help, because the console command that switches the language rebuilds no screen.
+
+> Picture below: the English game, and over the English line my name still in Russian. I was bilingual for one evening.
+
+![The tavern before the rework, English interface: a sign on everything. Title plate The Last Round, Menu, Notice Board, The Sword (you), Cellar of Memories, the three heroes' names with rank, two step plates and a grey Set out button at the bottom; over the sword's English line the speaker label still reads МЕЧ in Russian](devlog-media/tavern_before_rework_en.png)
+*12:56, before the rework. Every figure and object has a sign. Above the sword's line the speaker label is still Russian: the bug fixed at 12:56.*
+
+**13:07** The tavern became a room. The patrons are figures in an empty room, their names show only under the cursor, and one plate at the bottom says what to do: pick who carries the sword, pick a job, set out. What has to be clicked glows. Two small counters top right, a round menu button top left.
+
+**13:07** Broke: the first glow was the figure itself tinted orange and a little larger. It read as a ghost. Now it is the figure's outline in one colour, drawn by a small material.
+
+> The tavern had a sign on every head. Now it has one sign, and you can see the fireplace.
+
+![Three tavern screens side by side, English: step 1 of 2 Pick who carries the sword; step 2 of 2 Pick a job on the board, with Pip Underfoot chosen and the board outlined; and the last step with Pip Underfoot, LOST PROPERTY and an orange Set out button. Only Old Tobias has a name over his head](devlog-media/tavern_clean_scene.png)
+*13:07. The new tavern in three steps: who carries the sword, which job, set out.*
+
+**13:10** The leave button was renamed "Venture forth". At 13:11 it was renamed "To the road". At 13:18 it became an ornate plate with gold curls and pale letters with a dark edge. At 13:19 the chosen hero and job got dark plates with a thin gold border to match. At 13:22 the words were set on the line of the side ornaments.
+
+**13:18** Broke: the words ran onto the curls until the side padding was made wider than the plate's ends.
+
+> Five commits in twelve minutes for one button. "Venture forth" lived for one minute. The button now knows where it goes.
+
+![Two strips of the tavern's bottom plate, English: Lady Mirabel Vane in a gold-bordered plate, step 2 of 2, Pick a job on the board; then Lady Mirabel Vane and LOST PROPERTY in gold-bordered plates beside an ornate orange To the road button](devlog-media/tavern_pick_frames.png)
+*13:19. The chosen hero and job in gold-bordered plates, and the To the road button.*
+
+**13:37** A demo start: `-SCDemo=<notice>` or the `sc.Demo` command opens a job at once, with the moves already learned. F9 hides the fight interface. Both are for recording the video.
+
+**14:22** The developer recorded a fight against the dragon on Cinder Peak (52 MB of video) for the trailer, watched it frame by frame and called it raw.
+
+**14:34** A polish list was started from that recording, in docs/POLISH.md. The first batch went in at once: no motion blur on a dash, a gentler camera shake when the hero is hurt, the camera a little closer, English as the default language, hit flashes that stand up and face the camera, sparks off the blade, dust under an enemy's slam, flames from a circle of fire.
+
+> The developer watched one fight and wrote a list of everything wrong with it. The list is longer than the fight.
+
+![Three fight frames on the forest bridge and in a clearing: an orange crescent and white sparks on a swing at the troll, an orange ring of flame with sparks on a spin, and a starburst flash with an orange streak on a thrust](devlog-media/fx_bursts.png)
+*14:34. Flashes that face the camera, bursts of sparks, a ring of flame.*
+
+**14:42** Cinder Peak lost its cones and balls: rock spires and boulders with lava in their cracks stand there now, and the dragon lies on a hoard. The ground everywhere was one painting stretched over the whole place and blurred up close; a fine tiling grain lies over it now.
+
+![Two frames, English interface. Top: the forest ground up close, a path through grass and small flowers, with grain. Bottom: Cinder Peak, the job DRAGON. AGAIN., Sir Aldric the Adequate among black boulders with glowing cracks, the dragon Cinderbeth on her gold, Kobold Squire and Kobold Fire-Priest, the sword's line "Cinderbeth. Older than me, and I do not say that about much. Mind the gold. It is hot."](devlog-media/peak_models_ground_grain.png)
+*14:42. Grain on the forest ground; boulders and a hoard on Cinder Peak.*
+
+**14:58** Every fight effect is a recipe in one data table now: a hit, a move, an enemy's blow, a blast and a death each name an effect, and the effect is a few lines of data with particle pictures in it. Changing an effect is a line in the table, not code. The dragon got her second body, with new clips for the heavy blow, the slam, the cast and the stun.
+
+> The dragon was replaced too. She did not notice. Neither did the gold.
+
+![Twelve frames of the dragon on her gold mounds under the green arrow, Kobold Squire beside her: slash flashes, red warning circles, a white dust ring from a slam, a burst of flame, a white ring at her feet](devlog-media/dragon_v2_effects.png)
+*14:58. The new dragon and her effects, frame by frame.*
+
+**~15:00** Free space on the disk: 9.5 GB. At the end of day one it was 12.
+
+> The disk shrinks faster than the list of what is missing.
