@@ -875,3 +875,98 @@ Standard mannequin with stock animations for characters; generated models for bo
 **~15:00** Free space on the disk: 9.5 GB. At the end of day one it was 12.
 
 > The disk shrinks faster than the list of what is missing.
+
+**15:02** Broke: the names in the new effects table clashed with other names when the game was built as one big file. They were renamed.
+
+**15:08** The prologue shows its pictures whole: the legend sits on a see-through plate at the bottom and I speak over the top. Nothing in the tavern blinks any more; a patron is outlined under the cursor. On the board I greet the player once and keep quiet while the notices are leafed through. Every notice now shows its difficulty, counted from who is in it, so cutting a word out can lower it.
+
+![Three English screens: the prologue's knight in armour with a red cloak at sunrise, "Once there lived a Great Hero, Bartholomew the Bold."; the same line struck through over a man asleep in a ditch with a bottle, "a man called Barty, who slept in a ditch", and the sword above: "That's the version they sell with the ale. Allow me a few cuts."; and the notice LOST PROPERTY with "six" cut out, the ink jar at 6, the reward 130 coins and a difficulty line](devlog-media/prologue_plate_difficulty.png)
+*15:08. The prologue with a see-through plate, and a notice that shows how hard it is.*
+
+> The hero of the legend was Bartholomew the Bold. In my version he is Barty, and he sleeps in a ditch. I only cut a few words.
+
+**15:20** What I write into a notice is in my red ink now. The lines on my sheet are whole sentences written by the texts session, instead of a name glued to a cut word, which Russian grammar did not survive. A patron who lives keeps his chair and his rank; only the fallen one is replaced. Rank shows as gold marks over the head. The board and I, on the wall, are outlined like the patrons.
+
+**15:27** Souls are not counted any more. What a fallen hero leaves is ink, the list of the fallen is the Inkwell, and my sheet, my perks and my lines say so. Five heroes got clips beyond running and swinging: a dash, a spin for the whirlwind, a lunge for the thrust, a flinch, and each one's own move.
+
+**15:27** Broke: the heroes' new files came without their colours, and Aldric would have walked out grey. The importer now takes the colour map from the folder beside the file.
+
+**15:34** Broke: Brunhilda came out of the new import a hundred times too large and in pieces. The build session took the wreck in the frames for her new poses until the developer said it was not her. Her file goes through the older importer now, and all five heroes stand.
+
+> A barbarian woman, a hundred times her size, in pieces, and the machine called it "a new pose". The developer called it "not her".
+
+**15:34** Six of my lines about souls were voiced again, now about ink, in both languages. The music goes quieter while I talk.
+
+**15:51** When a hero dies holding me, what he had leaves his portrait as a small pale ghost, flies over in an arc and is drawn into the neck of my inkwell. The ghost always flies. The ink rises, with a red splash and a number, only if he left any; otherwise there is a grey puff and the jar nods.
+
+![Sixteen frames of the Hero Lost screen, English, for Old Tobias: a small blue ghost flies from his card over to the ink jar. In the top rows the jar stays at 3, "Not a Drop", "Died before doing anything"; in the bottom rows the jar goes from 3 to 4, "Fresh Ink", "Died with rank 0 (1 + rank)"](devlog-media/ghost_into_inkwell.png)
+*15:51. The ghost goes into the inkwell twice: once with no ink to give, once with a drop.*
+
+> The jar nods when you bring it nothing. It is more polite than I am.
+
+**16:00** The ground in all six places is drawn tiles now, sharp underfoot, and the old paintings only tint it. Mirabel got her move clips. Ninety environment models were imported.
+
+**16:09** The six places were dressed with them. 158 bare shapes were replaced with models and 550 things were set along the walls: oaks, pines and willows that sway, reeds, shores round the bog pools, rims round the lava, wine racks and cobwebs in the cellar, stalls and lamp posts in Dreadwick, statues and cages in the spire. Navigation was rebuilt.
+
+**16:09** Broke: the first count of what blocks a walker took every model for a wall and cut the bog in two. Now a tree blocks only with its trunk.
+
+![Six English frames: the cellar with barrels and crates, the troll's bridge in the forest, the bog with the witch, Hold the Gate in Dreadwick, the dragon on her gold at the peak, and the Hero Lost screen for Lady Mirabel Vane with "Not a Drop" and "New strangers have walked into the tavern."](devlog-media/places_dressed.png)
+*16:09. Places dressed with models.*
+
+**16:11** A coming blow is a thin red ring with a light spreading from its middle, instead of a hatched circle. The forest river banks came out as flat lime slabs and were removed.
+
+**16:11–17:54** No commits for an hour and three quarters.
+
+**17:54** A painted look was laid over the finished picture in all six places: small detail melts into brush patches, and a dark ink line runs round every figure, tree and stone, as in the concepts.
+
+**17:54** Broke: the first version did nothing at all. Its shader used a reserved word, and the engine quietly put a blank in its place. It was noticed only because the before and after pictures were the same.
+
+**17:57** The painted look was taken out of all six places. The developer did not want it.
+
+> It lived three minutes. "Venture forth" lived one. Things here die young.
+
+![Three English frames: the troll by his bridge with his club, the same spot without him, and the dragon at the peak with a red warning ring, Kobold Fire-Priest and Kobold Squire](devlog-media/painted_look.png)
+*17:54. Frames from the painted-look pass. Three minutes later it was taken out.*
+
+**18:08** Thirty-four kinds of enemy came back re-imported with more to do: mages cast, archers shoot standing, the stunned sway, beasts lunge. Everyone who holds a weapon holds it in a closed fist; the troll used to dangle his club from his fingertips. The place to go is a thin green ring instead of a green plate.
+
+![Six English frames of enemies with name labels: rats and a barrel in the cellar, a bear and wolves in the forest, bog frogs and the witches round a green ring, recruits in Dreadwick, kobolds round a green circle at the peak, rock harpies](devlog-media/enemies_lineup.png)
+*18:08. The re-imported enemies in their places.*
+
+**18:10** Cliffs line the edges of the forest, the bog and the peak. Angular rocks were imported.
+
+**18:19** The fallen no longer give the living any bonus: they leave ink and that is all. Candles, lanterns, torches and crystals flicker, vents steam, cauldrons bubble, lava spits embers. The big ones (troll, executioner, sergeant, golem, the Dark Lord) leap into a two-handed slam and stand like fighters. Dreadwick is walled with cliffs, and the bog's colours are calmer.
+
+**18:19** Broke: darkening the bog models with a tint made no visible difference three times. The lime green is in their textures, so the textures are now imported at half saturation.
+
+![Four English frames: Sir Aldric among barrels in the cellar with "Left mouse button. That is me. The hero holds on; I do the rest."; Lady Mirabel among lava pools at the peak with "A spellcaster. Spells take time. Do not give it any."; Hold the Gate in Dreadwick with roofs and a striped awning; the bog with a willow and a pool](devlog-media/living_places.png)
+*18:19. Lights, steam and embers in the places.*
+
+**18:21** The Inkwell perk branch: seven perks now give ink or a sturdier next hero. At 18:23 Full Inkwell gives three drops.
+
+**18:23–19:49** No commits for an hour and a half.
+
+**19:49** The last bare boxes are covered: barriers, barricades, towers, tents, nests and bridge rails are models. Water and lava drift. The Doomspire pillars are darker.
+
+**19:49** Broke: the moving water came out flat grey. Its shader had two inputs named T and t, and the engine reads them as one.
+
+> T and t. The engine sees no difference. I see none either, but I am a sword.
+
+**20:00** The troll, the ghoul and the drowned lurch now instead of jogging like goblins, and the ghoul and the drowned stand stooped. The wolf was re-imported with a pounce. The forest bushes are calmer.
+
+**20:00** Broke: four tries to photograph a walking enemy got a tree, an empty road, a sleeping troll and a ghoul leaving the frame. In the end the bodies were stood in a row beside the hero and their clips played there.
+
+**20:01** The polish list was brought up to date. The Inkwell branch was reworked again: the dead teach and guard the living, with ranks, healing on a kill, cooldown, a grudge against bosses, health and a last word.
+
+> At 18:19 the dead stopped helping the living. At 20:01 they started again. Death here is a matter of opinion.
+
+**20:44** The developer looked and found four things. Crates as tall as a man stood inside the Dreadwick fence: a size meant for lamp posts had gone to the barrels too. The river stood above its banks like a blue kerb, with bushes drowned in it; now it lies in its banks. The bog floor was loud lime and is calmer. The bridge is boards on beams.
+
+**20:44** Broke: the first log bridge was green, because the moss is on top of the model. The second, turned over, lay under the ground with only its ends showing, because the model turns round its foot and not its middle.
+
+![Two English frames of the troll's bridge in the forest, Lady Mirabel Vane on it, the sword saying "The troll. He charges a toll for the bridge. Today the fare is him.": a bridge of logs with green moss on their tops over the blue river](devlog-media/2026-11-13-forest-bridge.png)
+*20:44. Tries at the forest bridge. The green on the logs is the moss on top of the model.*
+
+**~20:54** Free space on the disk: 5.2 GB. It was 9.5 at three in the afternoon.
+
+> Six hours, four GB. At this rate the disk ends before the jam does.
