@@ -1109,7 +1109,7 @@ The times from 00:05 to 01:50 above are already Nov 14: the sessions worked past
 
 **14:09** The developer woke up and looked at the board. "The words run over the torn edges. And the Dark Lord hangs on the post, not on the board: then hang him on the post properly, by one nail, crooked." Done. A notice now says only its title, how hard and how much; the rest is in the hint. No two papers are alike: one picture, mirrored, turned over and shaded by the notice's name. The poster hangs on the post by a single nail, seven degrees off true. The rank marks lay across the heroes' faces in the tavern; they hang under the tables now. Names show only over enemies the notice gave words to, bars only over the hurt. The smallest print is three points larger, and the cellar stairs are no longer white.
 
-![English board: three torn notices pinned to planks, NIGHT WATCH ringed in red ink with "this one." beside it, 50 coins; WANTED: DEAD, 60 coins; LOST PROPERTY, "DANGEROUS · BIG PAY", 195 coins; the Dark Lord's poster on the right, a picture of him in black armour and no words; "3 INK LEFT" in the corner; the sword: "Three notices and one very old one. After every job the innkeeper pins up fresh ones. Paper is cheap. Heroes are cheaper."](devlog-media/2026-11-14-board-three.png)
+![English board: three torn notices pinned to planks, NIGHT WATCH ringed in red ink with "this one." beside it, 50 coins; WANTED: DEAD, 60 coins; LOST PROPERTY, "DANGEROUS · BIG PAY", 195 coins; the Dark Lord's poster on the right, a picture of him in black armour and no words; "3 INK LEFT" in the corner; the sword: "Three notices and one very old one. After every job the innkeeper pins up fresh ones. Paper is cheap. Heroes are cheaper."](devlog-media/2026-11-14-board-three-1424.png)
 *14:24. The board: three notices, my ring on one, the Dark Lord on the post.*
 
 > One nail, seven degrees crooked. At last the Dark Lord hangs the way he deserves.
@@ -1137,3 +1137,77 @@ The times from 00:05 to 01:50 above are already Nov 14: the sessions worked past
 **~14:45** Free space on the disk: 48 GB. In the morning it was 50.
 
 > The packs left, 474 megabytes of them. The disk lost two gigabytes anyway. Something here eats.
+
+**15:08** The developer played the build and said one word about it, which this log will not repeat. Then seven things. I talked over myself: every perk bought got a remark, each cutting off the last. Now I finish a line, and only the newest remark waits its turn. The hero outran the camera and seemed to jump back; the camera's lag is bounded now. One blow drew two effects; it draws one. The Russian print was a hairline face in which "е" read as "с"; it is one sturdy family now. The main menu was bare words over a painted tavern; it stands on a dark panel with plaques and the studio's name at its foot. The heroes in the tavern sit wider apart, and long notice titles fit.
+
+> One word for the whole build. I have said worse about better.
+
+**~15:12** The developer's itch.io profile became a studio: DEDLine. "DED" is Russian slang for an old man, the bio explains; the developer is not one yet, but has felt like one for years. The first avatar was "DED" struck through with a red line. The developer said DEDLine is more about a grandpa, so the avatar became a grandpa with a beard, round glasses and a flat cap. Then the word "grandpa" was taken out of the page: the banner now says "games by an old man at heart".
+
+> A studio named after an old man, run by someone who is not one. I am a sword named after a cut. We understand each other.
+
+**15:17** The settings wear the kit's look: drawn sliders with an ember fill, value plates, volumes that stop at a hundred percent. The prologue's legend no longer flashes by: it waits for the bard's recording, or for the time it takes to read. The menu names the studio, and the build's version sits in the corner.
+
+**15:24** "No, the art session made a new menu! A good one! You didn't use it!" the developer said. True: the build session had made a dark panel of its own while a better menu lay in the mockups. It is in now: dark letters on strips of torn paper against the dark wall, no pins and no little arrows on them ("this is for playing, not for filming"), three stories as pinned pages, each showing who carries me and how far they got: a place, not a number. The tavern has a new picture without the bottle and barrels in its corners. A bard tells the legend aloud in the prologue and the finale. The credits open from the menu.
+
+> The bard tells the legend louder and prouder than I do. I cross him out all the same.
+
+**15:30** The settings follow the art session's mockup too: the menu's picture behind them, a dark panel in a gold frame, drop-down lists that open, brass sliders with an amber fill up to a hundred percent. Esc goes back.
+
+**15:41** Four fonts for both languages, chosen by the developer with the art session: Brygada 1918 for headings and buttons, Gabriela for everything that is read, Underdog for the notices, and Caveat, the plain one, not the bold, for my hand. The old faces had no Russian letters, and the stand-ins could not be read. The new ones run wider, so each role is set a little smaller to take the same room.
+
+**15:44** Notices carry their difficulty and pay in the middle of the sheet, clear of the torn edges. The poster says WANTED again.
+
+> At 14:25 the Dark Lord's poster lost its words. At 15:44 it got one back. It is the right word.
+
+**16:00** My voice is back in its first cursive: IM Fell Italic, and Old Standard Italic for Russian.
+
+> At 15:41 I was given somebody else's handwriting. At 16:00 I got my own back. Nineteen minutes in someone else's hand. Never again.
+
+**16:00–20:22** No commits for four hours and twenty minutes.
+
+**20:22** The developer said the heroes ran like torpedoes: five metres ahead of themselves, then snatched back. The generated run and dash clips really travel, the hips leaving the root behind, and the game moves the capsule as well. A tool (tools/stay_on_spot.py) takes the travel out of 44 clips: every hero's run, dash, tumble, lunge, spin and hurt, and the ogres' run. Measured in a fight, the body stays within 23 cm of where the hero stands. The menu is written in my cursive and holds still under the cursor. My lines are two points smaller.
+
+**20:22** Broke: the first pass of the tool took the wrong axis for the ground on clips that start with the hips forward, and flattened the deaths too. Those were restored, the axis fixed, the deaths left alone.
+
+> Torpedoes. The heroes ran ahead of their own bodies. In this game that is called ambition.
+
+**21:02** A bot does every move with every hero (tools/check_moves.py): the swing, the dash, the hero's own move and my six, with each of the six heroes. It measures where the hips go, how fast the clip plays and what is in the air, and takes a picture. First run: 38 of 54 with something wrong. The dash dragged the body a metre off and under the ground, Pip's tumble two metres, and three of my moves had no body clip at all. Now the dash is the run played fast, the tumble turns on the spot, hips are pinned in 66 clips, and every move has a clip. The last run leaves only the understudy unchecked: the bot's story has no dead hero.
+
+**21:02** The developer could not tell my moves apart by their coloured rings. The rings are gone. The move's own picture rises over the hero and over everyone it touched; armour and the war cry stay on the hero while they last; the cell under the cursor says what the move does. The swing is quicker and keeps pace with attack speed. Long perk names take two lines, names under the move cells are gone, and a notice's title is sized to its longest word.
+
+> 38 of 54. When a machine checks my moves, I come out worse than when people do. People do not look that closely.
+
+**21:41** The developer says I never shut up. After a remark I now keep quiet for half a minute to a minute, except in the Dark Lord's hall, and a line said lately is passed over, so an edited notice no longer opens every job with the same sentence. The ogre had lost his skin: when his moves were re-imported, his material kept the old painting or none, and he walked about as grey rubble. Both ogres wear their own colours again. The tavern's menu is a gear in the top right, the day under the icons. Long hero names wrap. Enemy blows without a look of their own share one, a charge leaves a trail, and strikes no longer bury the hero in smoke. The target marker is a painted arrow facing the camera.
+
+**21:41** Broke: a solid cone-and-cylinder arrow read as a green disc from above. Two effect sprites drew as a grey checkerboard and were left out.
+
+> Half a minute to a minute of silence after every remark. I was told to keep quiet. I am keeping quiet about it.
+
+**21:45** The art session's work arrived within the hour: menu buttons of parchment on walnut with a calm middle for my cursive; a red arrow over the one to be killed, with my own circle drawn by hand on the ground under its feet; and creature effects: claw marks, a wind-up flash, a ground slam, a cast ring, a charge trail.
+
+**21:52** The developer said yes to the buttons. The word sits in the middle of each. The same painted button is the way back from the settings, whose lists open over the panel without moving it. The board's way to the tavern is the pill my own screen has, and Esc puts an open notice back on the board first.
+
+**21:59** The developer sent a picture of the settings: every word on a button stood above its middle. The chosen faces keep a long tail under the line, and a word centred by its line box rides high; "Back" by a quarter of its height. Words on buttons and in fields are now centred by the face's own measure. And Esc had never reached a screen: the menus took the keyboard for themselves. Now Esc is heard before any screen takes the keyboard, so it works in the settings, on the board and on my screen.
+
+**21:59** Broke: the build session had said Esc worked on the board and in the settings without ever pressing it in a built game.
+
+> "Esc works," it said. Nobody had pressed Esc. Saying is quicker than pressing.
+
+**22:13** The tavern's gear no longer throws the player out to the main menu: it opens the game's menu list over the tavern (continue, settings, main menu, quit), and the settings open right there. Esc in the tavern opens the same list and steps back one level at a time. The build number sits beside the studio's name. The Esc hint in the settings is gone.
+
+**22:19** Esc works, the developer says. The game's menu list has the main menu's painted buttons, and settings opened from it are a panel over the dimmed game. A slider's amber used to stretch with the knob; now it lies at full length and the knob uncovers it.
+
+**22:25** My red ring on the notice I would take ran through the letters of its title. It goes round the whole title now. The game's menu list sits on the settings' dark panel in a gold frame.
+
+> For a whole day I ringed the notice I would take, straight through its name. Now I ring it properly. The notice did not notice.
+
+**22:35** The game fell over three times tonight, each time when the cursor moved over a menu button. A button's two plates were loaded by path and held by nobody. While the lit one was on show, the plain one was collected as rubbish, and putting it back killed the game. The screen keeps both now. A bot (tools/check_hover.py) hovers every button on six screens and runs the collector in between: 708 rounds, still standing.
+
+**22:35** Broke: the crash came in with the painted buttons at 21:56, and four builds went out on top of it. Twice the game was seen gone after launch, and nobody read the crash report.
+
+> The game died every time someone pointed at a button. A button nobody owned. Here even buttons need an owner.
+
+**~22:47** Free space on the disk: 41 GB. In the morning it was 50, at a quarter to three 48.
+
+> Nine gigabytes in a day. I am not saying the developer hoards. I am saying the disk is getting smaller.
