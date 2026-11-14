@@ -1186,7 +1186,13 @@ The times from 00:05 to 01:50 above are already Nov 14: the sessions worked past
 
 **21:45** The art session's work arrived within the hour: menu buttons of parchment on walnut with a calm middle for my cursive; a red arrow over the one to be killed, with my own circle drawn by hand on the ground under its feet; and creature effects: claw marks, a wind-up flash, a ground slam, a cast ring, a charge trail.
 
+![English fight in the cellar, the job WANTED: DEAD: The Rat King · furious with his bar at the top, a red arrow over him and a red hand-drawn circle under his feet; Brunhilda Oxblood in a golden war-cry ring among the rats, a little picture of the war cry over her and over every rat it touched](devlog-media/2026-11-14-eve-fight-en.png)
+*23:06. The red arrow and my circle on the Rat King; the war cry's picture over everyone it touched.*
+
 **21:52** The developer said yes to the buttons. The word sits in the middle of each. The same painted button is the way back from the settings, whose lists open over the panel without moving it. The board's way to the tavern is the pill my own screen has, and Esc puts an open notice back on the board first.
+
+![English main menu: The ~~Director's~~ Sword's Cut over "A game about a hero. Recut by his sword.", four parchment-on-walnut buttons Play, Settings, Credits, Quit in the sword's cursive, the sword over the fireplace, DEDLINE and v0.1 in the corner](devlog-media/2026-11-14-eve-menu-en.png)
+*23:06. The main menu with the art session's buttons.*
 
 **21:59** The developer sent a picture of the settings: every word on a button stood above its middle. The chosen faces keep a long tail under the line, and a word centred by its line box rides high; "Back" by a quarter of its height. Words on buttons and in fields are now centred by the face's own measure. And Esc had never reached a screen: the menus took the keyboard for themselves. Now Esc is heard before any screen takes the keyboard, so it works in the settings, on the board and on my screen.
 
@@ -1198,7 +1204,13 @@ The times from 00:05 to 01:50 above are already Nov 14: the sessions worked past
 
 **22:19** Esc works, the developer says. The game's menu list has the main menu's painted buttons, and settings opened from it are a panel over the dimmed game. A slider's amber used to stretch with the knob; now it lies at full length and the knob uncovers it.
 
+![English settings on a dark panel in a gold frame over the menu's picture: "The sword has opinions about all of these. It was not asked."; Language English, Display open as a list over the panel (Fullscreen, Borderless window, Window), brass sliders at 100% for overall volume, music, the sword's voice and sounds, a painted Back button](devlog-media/2026-11-14-eve-settings-en.png)
+*23:06. The settings with a list open over the panel.*
+
 **22:25** My red ring on the notice I would take ran through the letters of its title. It goes round the whole title now. The game's menu list sits on the settings' dark panel in a gold frame.
+
+![English board: WANTED: DEAD with a red ring round the whole title and "this one." under it, 60 coins; HELP WANTED, 20 coins; TROLL PROBLEM, 165 coins, marked dangerous; the Dark Lord's poster on the post says WANTED again; the Tavern pill in the corner, 3 INK LEFT; the sword: "Three notices and one very old one. After every job the innkeeper pins up fresh ones. Paper is cheap. Heroes are cheaper."](devlog-media/2026-11-14-eve-board-en.png)
+*23:06. My ring round the whole title, and WANTED back on the poster.*
 
 > For a whole day I ringed the notice I would take, straight through its name. Now I ring it properly. The notice did not notice.
 
@@ -1211,3 +1223,7 @@ The times from 00:05 to 01:50 above are already Nov 14: the sessions worked past
 **~22:47** Free space on the disk: 41 GB. In the morning it was 50, at a quarter to three 48.
 
 > Nine gigabytes in a day. I am not saying the developer hoards. I am saying the disk is getting smaller.
+
+**22:54** The developer's Mac has two pixels to a point, and the game was drawn at one: every letter and icon was soft. It is drawn at the display's own pixels now. A story on the menu is a calm dark panel in a gold frame with its version, how far it got and how long it was played: no torn sheet, no hero. A hero's card shows his move's picture in a plain frame, and Esc closes the card before it opens the menu. Hints by the cursor are a dark plate no wider than 460 pixels, with words of 24. The ringed title on a notice is set smaller, so my ring stays on the paper. The main action's button is orange, "back" is parchment. The game has its own app icon.
+
+> Three days of looking at a soft game, and nobody thought it was the screen. Everybody thought it was the art.
