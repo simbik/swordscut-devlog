@@ -970,3 +970,82 @@ Standard mannequin with stock animations for characters; generated models for bo
 **~20:54** Free space on the disk: 5.2 GB. It was 9.5 at three in the afternoon.
 
 > Six hours, four GB. At this rate the disk ends before the jam does.
+
+**20:57** A check, named "wet": nothing but water plants may stand in water or lava. Whatever it found standing there was taken away. The river is clear.
+
+**20:58** The troll's bridge is the modeller's now: flat boards and a log rail on each side.
+
+**21:59** The developer asked whether runs could be checked by a machine. Now they are: a check (tools/check_runs.py) takes each of the sixteen notices in turn, starts the job and asks whether the hero can walk to every enemy, every thing and every named spot. Its first run said no almost everywhere.
+
+**21:59** Broke: four of the six places had no navigation at all. The dressing tools saved a level a moment after opening it, before the engine had rebuilt its walkable floor, and saved the emptiness. Nobody in the cellar, the bog, Dreadwick or on the peak could have taken a step. Navigation was rebuilt. The check also found recruits standing inside their own palisade and imps on top of a boulder; an enemy that cannot be reached is now put nearer the road.
+
+> Four places out of six could not be walked, and nobody noticed until a machine looked.
+
+**22:01** No scissors in my lines or perk names any more: red ink instead. At 22:04 five of my lines were voiced again without scissors, and a crooked post by the troll's bridge says TOLL, with a coin painted beside the word.
+
+![English frame: the forest, the job TROLL PROBLEM, the plank bridge over the river with the sleeping troll's bar above it, a wooden sign TOLL with a gold coin by the bridge, Brunhilda Oxblood on the path, the sword: "The troll. He charges a toll for the bridge. Today the fare is him."](devlog-media/2026-11-13-toll-sign.png)
+*22:04. The toll sign by the troll's bridge.*
+
+> I used to own a pair of scissors. Now I own a pot of ink. Nobody asked me.
+
+**22:09** Esc leaves the perk tree for the tavern. At 22:11 no perk gives ink outright any more: Ink Reserve and Final Draft raise what the fallen leave. At 22:26 that ink is rounded up, so the first Ink Reserve gives a drop after the first death.
+
+**22:25** The perk tree is a grid with a picture for every perk: four columns growing down, a look for each state, tiers, and a card with a Learn button. At 22:28 every branch splits into two at most and the columns fill the screen. At 22:34, the second pass: the card is as tall as its text, and moves on keys show their picture and cooldown. At 23:55, the third pass: the trees stand in the middle, a click on a perk opens a small window beside it with the Learn button, and my moves lie in a strip below. At 01:10, the fourth: smaller nodes, wider apart, every name on one line.
+
+**22:25** Broke: the tick on a learned perk. None of the game's fonts can draw one, and the game printed a little empty box instead. The tick is two short bars now.
+
+> Four passes in three hours for one screen. The tree is called "What the Sword Remembers". I remember all four.
+
+![English perk tree, "What the Sword Remembers", 150 sword XP: four columns Blade, Call, Inkwell and Montage, each a tree of round perk pictures from Honed Edge, Firm Handshake, Moment of Silence and Ink Reserve down to Final Cut, Chosen One, Last Word and Final Draft; learned perks lit with a green tick, others dim; a strip of moves on keys below; the sword: "Better. I did not think that was possible. Neither did my last owner."](devlog-media/2026-11-14-perk-tree-centre.png)
+*23:55. The perk tree, third pass.*
+
+**23:55** A bot plays every job to its end (tools/play_runs.py): it cannot be hurt, it fells whoever is nearest and then goes where the marker points. Fifteen of seventeen runs ended as they should the first time. The two that did not were both escorts: the grandmother and the cake. Decor no longer blocks the way, and whoever is escorted walks round obstacles instead of straight at the next point. Nine new models were placed: stakes, walls, a dais, a crypt door, stairs, towers, a pier, nests.
+
+**23:55** Broke: everything that was told to let people through. Fences, bushes, cliffs and the new bridge had their collision switched off, and the level saved them solid all the same, because a model placed from an imported mesh takes its collision from the mesh unless told otherwise. The grandmother stood in front of the bridge for seven minutes of game time. The cake's bearer leaned on a fence.
+
+> The grandmother waited at the bridge for seven minutes. In this game that is patience. In a grandmother it is normal.
+
+**00:05** The walk check asks at the hero's height, so small bodies are no longer counted as out of reach.
+
+**00:31** Enemies are placed only where the hero can walk to. An enemy hit while it walks or catches its breath now flinches; bosses do not. Things stand where they make sense: reeds had grown all over the bog, thirty-nine clumps in the open, and now stand by water, three to a pool at most. Barrels inside carts, graves inside a fence, a tree inside a rock: gone.
+
+**01:10** The gargoyle walks. It was a statue wearing someone else's skeleton; now it has a two-legged body of its own. The ogres got a heavy blow, a flinch and a stagger; lizards flinch. Guards never stand behind their own barricade.
+
+**01:10** Broke: the check of who can be walked to said no three times about recruits standing in the open. Whoever stands guard cuts the floor under itself out of the walkable map, so a path to exactly where it stands is refused. The check asks a few steps to the side now. It still found a recruit on the far side of the barricade he was guarding: nobody could have reached him, and the gate opens only when its guards are dead.
+
+> A guard behind his own barricade. The gate opens when he dies. He could not die, because nobody could reach him. A perfect guard.
+
+**01:34** The first smooth tree. The modeller made one oak again from a much denser shape, pressed down to eighteen thousand triangles, with a lighter copy for when it is far. Its crown is round clouds, not crystals. A winning hero raises the sword. A saved share of a rank is no longer wasted on a hero at the top rank, and the Dark Lord calls nobody when his army has been cut from the notice.
+
+**01:34** Broke: the new oak glowed mint green. Its paint was calm in the file and loud in the game's light; it was darkened by a third. At 01:35 the modeller repainted the oak, and the darkened copy was no longer needed.
+
+![English frame in the forest, the job TROLL PROBLEM: Pip Underfoot by a big grey boulder; top right the new oak with a round cloud-like crown, bottom right a bush still bright lime](devlog-media/2026-11-14-oak-new-vs-old.png)
+*01:34. The new smooth oak, top right.*
+
+**01:50** Thirty-one environment models became denser, each with a lighter copy for when it is far: trees, bushes, rocks, cliffs, barrels, pillars, the well. Cliffs, walls and pillars were placed again to their new sizes.
+
+![Six English frames. Top row, the forest: a boulder and round trees, dense bushes, the troll's bridge with the TOLL sign. Bottom row: the bog with fences and frogs; the bog pool almost entirely covered by the big ferry, with reeds and a pole on it; Dreadwick with fences and barrels](devlog-media/2026-11-14-smooth-forest-bog.png)
+*01:50. Denser models. Bottom middle: the ferry in the bog pool, the size of the pool.*
+
+## Nov 14 — Day 3
+
+The times from 00:05 to 01:50 above are already Nov 14: the sessions worked past midnight.
+
+**01:50–08:27** No commits for six and a half hours.
+
+**08:27** The developer looked at the bog and asked what the thing in the middle was: an island? a sunken bridge? It was the ferry, eight metres of it, lying in a nine-metre pool behind a bank three metres high. Now the bank is knee-high, the ferry is small and moored at the edge, and most of the pool is open water. Nine small pools that ran into the big one or lay under fences are gone. The mossy rock that had come back from the modeller as a neat cube is a round boulder again. Five balance edits were copied into the game's data.
+
+> An eight-metre ferry in a nine-metre pond. That was not a ferry. That was a lid.
+
+**08:27** Broke: the pool cleanup took the big pool's bank away along with the small pools, because it matched them by distance and the distance was too wide. The bank was put back and the match narrowed.
+
+**08:27** Broke, found on the way: every navigation run had added one more hidden trunk post to every tree. The bog had 245 spare posts, the forest 267. They were removed.
+
+> 245 invisible posts in one bog. The drowned had something to lean on.
+
+![English frame: Sorrowmire, the job FERRY GUARD, Hold out: wave 1 of 6. Lady Mirabel Vane on the bank of a round pool; a small wooden raft with a pole moored at the edge, a water lily with a pink flower, open blue-green water; a green ring marks the place to go on the left](devlog-media/2026-11-14-bog-raft-near.png)
+*09:10. The same pool after the fix: the ferry is small and moored at the edge.*
+
+**~09:16** Free space on the disk: 50 GB. Last evening it was 5.2. This log does not know what was deleted overnight.
+
+> Forty-five gigabytes came back while I slept. I do not sleep. I still did not see who did it.
