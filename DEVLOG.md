@@ -1049,3 +1049,91 @@ The times from 00:05 to 01:50 above are already Nov 14: the sessions worked past
 **~09:16** Free space on the disk: 50 GB. Last evening it was 5.2. This log does not know what was deleted overnight.
 
 > Forty-five gigabytes came back while I slept. I do not sleep. I still did not see who did it.
+
+**09:21** "The ferry is the size of the puddle," the developer said. So the puddle grew: the black pool is fifteen metres by eleven now, and the ferry floats whole near the bank. The developer also asked how anyone kills the hydra if nobody can walk on the pool. Two honest answers: everybody can walk on the pool, and the hydra did not live in it; she sat on the path beside it. The ferry job is now what it really was: guarding a ferry that goes nowhere.
+
+![English frame: Sorrowmire, the job FERRY GUARD, Hold out: wave 1 of 6. Brother Osric on the bank of a large round pool of blue-green water; a wooden raft with a pole floats near the bank, a water lily with a pink flower beyond it; a green ring on the left marks the place to go](devlog-media/2026-11-14-bog-pond-large.png)
+*09:21. The pool, grown to fit its ferry.*
+
+> At 08:27 the ferry was too big for the pond, so the ferry was made small. At 09:21 the pond was made big. Nobody here does things by halves. Twice.
+
+**09:39** The hydra moved house. Her job said "the black pool", and my own line said "keep out of the water", while she sat dry on the path. Now a job can name a place beside the road for its monster, and hers is in the pond by the near bank. The ferry made room.
+
+![English frame: Sorrowmire, the job MONSTER, PROBABLY ONE: the Hydra's bar at the top, her green necks rising out of a ring in the pond, Old Tobias on the bank among three giant Leeches, the sword below: "The hydra. Watch the necks, not the teeth. And keep out of the water. The leeches work for her."](devlog-media/2026-11-14-hydra-in-pond.png)
+*09:37. The hydra in her pond.*
+
+> I told everyone to keep out of the water. The hydra was the only one who listened. So she was moved into it.
+
+**~11:06** The game was measured. Five places hold seventy frames a second inside the editor. The Doomspire looked like twenty-seven until it was measured again: the first number was the editor warming up. Half of every frame is the editor drawing its own window; the game takes seven milliseconds. The weight was another matter: yesterday's build zips to 880 MB of the 1 GB allowed, and 190 MB of that was the engine's neural denoiser for a renderer the game does not use. It is switched off.
+
+> Seven milliseconds for the game. The rest goes to the editor looking at itself.
+
+**~11:07** The bog's edge cliffs were a pale blue that read as cardboard; they have their own mossy paint now. The white trio of rocks is toned down. Somebody had scattered red mushrooms on the boards of the start pier. The somebody was the build session.
+
+**11:14** The developer walked into the ring with the keg and stood there for two and a half seconds, waiting to be noticed. The game had noticed: it was holding the pause that follows a last blow, and there had been no blow. A job won by arriving now ends in six tenths of a second. The hydra was a statue: she has no clips, so she is moved by hand now. She breathes, rears back before a bite and throws herself forward with it.
+
+![English frame: the same job, Brunhilda Oxblood in a cloud of dust by three giant Leeches, the hydra's necks leaning out of the pond towards her, the sword's line about the necks below](devlog-media/2026-11-14-hydra-lunges.png)
+*11:14. The hydra, moved by hand, leans in.*
+
+> The developer stood in the ring waiting for me to notice. I had noticed. I was waiting for a blow that was never coming.
+
+**~11:58** "All models are ours, without the packs," the developer said, and was half right: the forest stood on a free pack's trees, the cellar on a bought dungeon's barrels and bookshelves, Dreadwick on a village pack's houses. 389 things changed hands: oaks, birches, ferns, barrels, sacks where the clay pots were, wine racks where the bookshelves were. Seven packs and the engine's mannequins were deleted, 474 MB lighter. The editor died once in the middle of it, deleting dragons. Left of other people's work: fourteen houses in Dreadwick.
+
+**~11:58** Broke, in a way: the forest is rounder. The new oaks are smooth green clouds where the pack had leaves. They are ours, which was the point.
+
+> Fourteen houses that belong to somebody else. Everything else here is ours, mistakes included.
+
+**~12:58** The game's history was squashed into one commit, the project's state on 14 November. What came between here and there has no exact time any more.
+
+> Three days in one commit. I remember them in more detail.
+
+**~12:58** The last borrowed houses left Dreadwick. The modeller sent four of ours, an outhouse with a moon on its door, clay pots, a bookshelf and a table; the village pack is deleted, and with it the last thing in this game somebody else made. On the way it came out why the barrels were grey from a distance: every model's lighter copy had an empty paint slot. Thirty-nine models wore nothing whenever you stepped back.
+
+> From close up, everything was painted. From far away, thirty-nine models were naked. The game is played from far away.
+
+**~12:58** The developer went to sleep and left word: build everything, it will be corrected later. So: three stories instead of one save, each begun in the Short Version (twenty drops of ink in hand, the board grows with every win) or the Normal one, and New Game+ for a Normal story that is over. The board is a board now: wood, torn paper, pins. Three notices, dealt by strength: one easy, one that fits, one dangerous with a red skull and better pay. I ring the one I would take in my own ink. The Dark Lord's poster always hangs apart. Finished notices do not come back while anything unfinished is left. A click on the board in the tavern walks you up to it.
+
+**~12:58** Broke: the game's own test said the Short Version was broken. It was the test: a switch that hangs out every notice had stayed on from the run before.
+
+**~12:58** A fresh build: 705 MB zipped, where yesterday's was 880. The packs are gone, the denoiser is gone. It starts and holds the menu. Nobody played it; the developer was asleep.
+
+> 705 megabytes. Lighter by the weight of other people's barrels.
+
+**~13:00** Thirty-five pictures of the game for the art review, each cut to 1920 by 1080: the menu, the three stories, the tavern, the board with three notices and with five, a sheet before and after my ink, the tree, the loading card, a fight in each of the six places, the pause, a win, a death. The editor's own view is not that shape, so the game learned to lay out its screens in a frame for the camera. The first try put the whole menu in the top left corner of a red cylinder. The mockups session looked at all thirty-five and wrote a list. At the top: red scissors at the end of the loading line, where no scissors may be; three pictures that showed result screens instead of the Dark Lord's fight, the escort and the pause; and a boss label that read "Furious The Rat King".
+
+**~13:00** Broke: half of the fight pictures first came out as the tavern. "Close the board" had been typed at the console for the menu pictures, and a value typed at the console outranks one set by code, so the demo start could no longer open the board for itself. It can now.
+
+> The menu in the corner of a red cylinder. The art review was spared that one.
+
+**13:13** From the art review: an ink drop runs along the loading line instead of scissors. Named monsters read name first: "The Rat King · furious". Notices and their marks on the board are larger, the last notice is on its poster's old paper, and the result cards are larger. The screen tour took the Dark Lord's hall, the escort and the pause properly.
+
+**14:09** The developer woke up and looked at the board. "The words run over the torn edges. And the Dark Lord hangs on the post, not on the board: then hang him on the post properly, by one nail, crooked." Done. A notice now says only its title, how hard and how much; the rest is in the hint. No two papers are alike: one picture, mirrored, turned over and shaded by the notice's name. The poster hangs on the post by a single nail, seven degrees off true. The rank marks lay across the heroes' faces in the tavern; they hang under the tables now. Names show only over enemies the notice gave words to, bars only over the hurt. The smallest print is three points larger, and the cellar stairs are no longer white.
+
+![English board: three torn notices pinned to planks, NIGHT WATCH ringed in red ink with "this one." beside it, 50 coins; WANTED: DEAD, 60 coins; LOST PROPERTY, "DANGEROUS · BIG PAY", 195 coins; the Dark Lord's poster on the right, a picture of him in black armour and no words; "3 INK LEFT" in the corner; the sword: "Three notices and one very old one. After every job the innkeeper pins up fresh ones. Paper is cheap. Heroes are cheaper."](devlog-media/2026-11-14-board-three.png)
+*14:24. The board: three notices, my ring on one, the Dark Lord on the post.*
+
+> One nail, seven degrees crooked. At last the Dark Lord hangs the way he deserves.
+
+**14:12** My line is put away while the pause list is up.
+
+**14:15** Enemy labels begin with a capital: Giant Leech, where the hydra's pond still said "giant Leech" in the morning. Whoever is escorted has a counter name of its own: "Grandmother: 24/80".
+
+> A leech with a capital letter is a different leech. Ask it.
+
+**14:25** The poster carries the Dark Lord's face and no words: the words "sat badly", the developer said. In the tavern a chair was drawn over the bottle in the near corner of the picture; the two near seats moved up and in, clear of the bottle and the barrels. And a story opens on the three the prologue shows: Brunhilda on the left, Pip in the middle, Tobias on the right.
+
+![English tavern, The Last Round, day 1: Brunhilda Oxblood laughing with a tankard at the left table, Pip and Old Tobias at the right table, me over the fireplace, the board of papers on the wall, the bottle and barrel in the near corners clear of the chairs, and a strip at the bottom: Brunhilda Oxblood, NIGHT WATCH, To the road](devlog-media/2026-11-14-tavern-ranks.png)
+*14:24. The tavern: the prologue's three at the tables, nobody sitting on the bottle.*
+
+> His poster used to have words. Now it has only his face. It says more.
+
+**~14:40** The game's page on itch.io got a new look and was published. Dark tavern colours, headers in IM Fell English SC and text in Alegreya Sans, both from the game's own fonts. The banner is me over the fireplace with the title, "Director's" struck out and "Sword's" written above it. The background is the tavern, darkened. Instead of screenshots the page shows four spreads of the game's handbook: the notice, the heroes, the kingdom, the controls and me. The description no longer mentions souls or points; it is ink now. Post 10 of this log went up there too, and every title now begins with "Day N".
+
+![The itch.io banner: a sword with a film strip along its blade hangs on hooks over a stone wall by a lantern and a night window; below it the title THE DIRECTOR'S CUT with DIRECTOR'S struck out in red and "Sword's" written above it in gold](devlog-media/2026-11-14-itch-banner.png)
+*~14:40. The new banner of the game's page.*
+
+> The page is public now. Anyone can read what I say about the developer. Good.
+
+**~14:45** Free space on the disk: 48 GB. In the morning it was 50.
+
+> The packs left, 474 megabytes of them. The disk lost two gigabytes anyway. Something here eats.
